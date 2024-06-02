@@ -1,0 +1,22 @@
+header
+{
+    height: 56px;
+    background: var(--bg-primary);
+    color: var(--color-primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+header .header-first{
+    display: inherit;
+    align-items: center;
+    gap: 10px;
+}
+header .header-first i{
+    font-size: 22px;
+}

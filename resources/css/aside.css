@@ -1,0 +1,35 @@
+.lims-slider{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.lims-slider .logo{
+    font-size: 24px;
+    font-weight:bold;
+    margin-bottom:30px;
+    text-align: center;
+}
+.lims-slider .link-container{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.lims-slider .link-container i{
+    font-size:20px;
+    margin-right: 20px;
+    transition:  transform 0.5s;
+}
+.dropdown-button .rotate{
+    transform: rotate(90deg);
+}
+.dropmenu-items-hidden{
+    height: 0px;
+    overflow: hidden;
+}
+.lims-slider .dropdown-button{
+    flex: 1;
+    text-align: end;
+
+}
+

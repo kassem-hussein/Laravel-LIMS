@@ -1,0 +1,14 @@
+@media print {
+/* Define the header and footer */
+    @page {
+        margin-top: 1cm;
+        margin-bottom: 3cm;
+        @bottom-left{
+            content:'Page ' counter(page) ' of ' counter(pages);
+        }
+        @bottom-right{
+            content: "AL-KAFI LABARTORY";
+        }
+    }
+}
+
