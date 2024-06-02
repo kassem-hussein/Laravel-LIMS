@@ -15,5 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         // create user with role admin here
+        
+
     }
 }
