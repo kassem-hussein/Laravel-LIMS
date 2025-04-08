@@ -1,7 +1,7 @@
-# Project Name: Comprehensive Management System
+# Project Name: Laboratory Management System
 
 ## Overview
-The Comprehensive Management System is a robust platform designed to streamline the management of various entities in an organization. It leverages modern web technologies and middleware to provide role-based access, secure authentication, and efficient workflows. This project is particularly suited for industries like healthcare, laboratories, or business operations, where managing tests, patients, visits, samples, finances, and users is critical.
+This Laravel-based system offers a comprehensive solution for managing healthcare operations, including patient records, medical tests, user accounts, doctor profiles, revenue tracking, expenditure monitoring, and inventory of medical materials. It also incorporates robust authentication and authorization features to ensure secure access and efficient user role management
 
 ---
 
@@ -9,7 +9,7 @@ The Comprehensive Management System is a robust platform designed to streamline 
 - **Authentication and Authorization**:
   - Secure login/logout system.
   - Role-based access control with middleware.
-  - Differentiated permissions for admin, nurses, and guests.
+  - Differentiated permissions for admin, nurses, and doctors.
 
 - **Entity Management**:
   - Full CRUD (Create, Read, Update, Delete) operations for tests, parameters, groups, patients, visits, samples, materials, revenues, and expenditures.
@@ -23,7 +23,7 @@ The Comprehensive Management System is a robust platform designed to streamline 
   - Update statuses and generate revenue reports.
 
 - **Inventory Management**:
-  - Manage materials and inventory with real-time status updates and editing.
+  - Manage materials and inventory updates and editing.
 
 - **Custom Middleware**:
   - `AdminMiddleware` to restrict certain operations to administrators.
@@ -32,7 +32,6 @@ The Comprehensive Management System is a robust platform designed to streamline 
 
 ---
 
-## Modules and Endpoints
 
 ### **1. Home**
 - Displays the home page.
@@ -51,16 +50,7 @@ The Comprehensive Management System is a robust platform designed to streamline 
 ---
 
 ### **3. Tests Management**
-| Method | Endpoint          | Middleware             | Description             |
-|--------|-------------------|------------------------|-------------------------|
-| GET    | `/tests`          | `Authentication`, `NotNurseMiddleware` | List all tests. |
-| POST   | `/tests`          | `Authentication`, `NotNurseMiddleware` | Create a new test. |
-| GET    | `/tests/add`      | `Authentication`, `NotNurseMiddleware` | Form to add a test. |
-| GET    | `/tests/{id}/edit` | `Authentication`, `NotNurseMiddleware` | Edit test details. |
-| PUT    | `/tests/{id}`     | `Authentication`, `NotNurseMiddleware` | Update a test. |
-| DELETE | `/tests/{id}`     | `Authentication`, `NotNurseMiddleware` | Delete a test. |
-| GET    | `/tests/print`    | `Authentication`, `NotNurseMiddleware` | Print test details. |
-
+Allows adding , updating , deleting , and printing tests records 
 ---
 
 ### **4. Parameters Management**
@@ -104,6 +94,6 @@ Admin-only module to manage platform users.
 ## Technologies Used
 - **Backend Framework**: Laravel
 - **Middleware**: Authentication, Role-Based Access Control
-- **Frontend**: Custom UI (not explicitly mentioned but implied)
+- **Frontend**: Blade, Tailwind
 - **Database**: Relational Database (MySQL)
 
