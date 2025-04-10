@@ -32,7 +32,7 @@
             <div class="header-conataier d-flex align-items-center justify-content-between">
                 <div>
                     <div class="fs-2 text-uppercase mb-2"> <i class="fa fa-blood"></i>AL-KAFI LABORATORY  <br/><span class="fs-4 text-danger"> for medical analysis</span> </div>
-                    <div><i class="fa fa-map text-danger me-2"></i>Syria-daraa</div>
+                    <div><i class="fa fa-map text-danger me-2"></i>Syria</div>
                     <div><i class="fa fa-phone text-danger me-2"></i>0997845678</div>
                 </div>
                 <img src="{{asset('lab.png')}}" class="w-25 rounded" alt="">
